@@ -22,7 +22,5 @@ Route::group($parameters, function () {
 });
 
 Route::group(array_merge($parameters, ['middleware' => 'auth:api']), function () {
-    Route::get('/user', function (Request $request) {
-        return $request->user();
-    });
+    Route::get('/user', 'UsersController@index');
 });
