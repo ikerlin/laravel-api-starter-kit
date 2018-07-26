@@ -25,7 +25,7 @@ class PassportAccessTokenCreated
      * @param  object  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(AccessTokenCreated $event)
     {
         $tokenIdArr = Token::where('id', '!=', $event->tokenId)
             ->where('user_id', $event->userId)
