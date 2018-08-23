@@ -2,7 +2,7 @@
 * Laravel 5.5
 
 ## 功能
-* [] api文档（基于Swagger）
+* [x] api文档（基于Swagger）
 * [] 登录、退出
 * [] 文件上传demo
 * [] 第三方登录？
