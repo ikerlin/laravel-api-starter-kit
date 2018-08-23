@@ -16,6 +16,8 @@ use Illuminate\Http\Request;
 /*---------------------------------v1---------------------------------*/
 $parameters = ['prefix' => 'v1', 'namespace' => 'Api\v1'];
 
+Route::get('/v1/doc', 'SwaggerController@v1');
+
 Route::group($parameters, function () {
     Route::post('/login', 'AuthenticateController@login');
     Route::post('/logout', 'AuthenticateController@logout');
